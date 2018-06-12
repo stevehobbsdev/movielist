@@ -1,0 +1,18 @@
+.movie-card {
+  position: relative;
+}
+
+.movie-card .movie-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: black;
+  opacity: 0;
+  height: 100%;
+  padding: 1rem;
+  transition: all 0.25s;
+}
+
+.movie-card.active .movie-info {
+  opacity: 0.8;
+}

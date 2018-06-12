@@ -1,0 +1,18 @@
+<template>
+  <require from="./movie.css"></require>
+
+  <div class="card" style="min-width: 20rem">
+
+    <div class="movie-card ${isHovering ? 'active' : ''}" mouseover.delegate="mouseOver()" mouseout.delegate="mouseOut()">
+      <img src="${model.poster_path}" alt="" class="card-img-top">
+      <div class="movie-info">
+        <p>${model.overview}</p>
+      </div>
+    </div>
+
+    <div class="card-body">
+      <h5 class="card-title">${model.title}</h5>
+      <p>Avg. rating: ${model.vote_average}</p>
+    </div>
+  </div>
+</template>
