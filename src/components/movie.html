@@ -13,6 +13,9 @@
     <div class="card-body">
       <h5 class="card-title">${model.title}</h5>
       <p>Avg. rating: ${model.vote_average}</p>
+      
+      <a if.bind="!isInWatchlist" click.trigger="addMovie(model)" href="#" class="btn btn-success">Add</a>
+      <a if.bind="isInWatchlist" click.trigger="removeMovie(model)" href="#" class="btn btn-outline-success">Remove</a>
     </div>
   </div>
 </template>

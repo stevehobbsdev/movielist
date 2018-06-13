@@ -1,0 +1,11 @@
+<template>
+    <require from="../components/movielist"></require>
+  
+    <movie-list movies.bind="watchlist.get()" title="Your watchlist"></movie-list>
+  
+    <div class="alert alert-info" if.bind="!hasMovies">
+      <h4 class="alert-heading">There's nothing here!</h4>
+      <p>Try looking through <a href="${router.generate('popular')}">popular movies</a> to add them to your watchlist</p>
+    </div>
+  
+  </template>

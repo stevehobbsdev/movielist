@@ -6,7 +6,8 @@ export class App {
     config.options.pushState = true;
 
     config.map([
-      { route: ['', 'popular'], name: 'popular', title: 'Popular movies', moduleId: PLATFORM.moduleName('pages/popularmovies'), nav: true },
+      { route: ['', 'watchlist'], name: 'watchlist', title: 'Watchlist', moduleId: PLATFORM.moduleName('pages/watchlist'), nav: true },
+      { route: 'popular', name: 'popular', title: 'Popular movies', moduleId: PLATFORM.moduleName('pages/popularmovies'), nav: true },
       { route: 'search/:term', name: 'search', moduleId: PLATFORM.moduleName('pages/searchresults')}
     ]);  
   }
