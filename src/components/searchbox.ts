@@ -3,7 +3,7 @@ import { EventAggregator } from "aurelia-event-aggregator";
 import { Router } from "aurelia-router";
 
 @autoinject
-export class Search {
+export class SearchBox {
 
   @bindable searchTerm: string
 

@@ -1,7 +1,18 @@
 <template>
 
+  <require from="./searchbox"></require>
+
   <nav class="navbar navbar-expand navbar-dark bg-primary justify-content-between">
     <span class="navbar-brand mb-0 h1" href="#">${appTitle}</span>
+
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item ${item.isActive ? 'active' : ''}"
+          repeat.for="item of router.navigation">
+        <a class="nav-link" href.bind="item.href">${item.title}</a>
+      </li>
+    </ul>
+
+    <search-box></search-box>
   </nav>
 
 </template>
