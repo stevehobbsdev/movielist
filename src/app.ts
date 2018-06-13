@@ -7,6 +7,7 @@ export class App {
 
     config.map([
       { route: ['', 'popular'], name: 'popular', title: 'Popular movies', moduleId: PLATFORM.moduleName('pages/popularmovies'), nav: true },
+      { route: 'search/:term', name: 'search', moduleId: PLATFORM.moduleName('pages/searchresults')}
     ]);  
   }
 }
