@@ -16,7 +16,7 @@ export class AuthService {
     domain: env.auth0.domain,
     clientID: env.auth0.clientId,
     redirectUri: "http://localhost:8080/callback",
-    audience: "http://movie-list",
+    audience: `https://${env.auth0.domain}/userinfo`,
     responseType: "token id_token",
     scope: "openid"
   });
@@ -61,7 +61,6 @@ export class AuthService {
     delete this.expires_at;
   
     this.authNotifier.emit('authChange', { authenticated: false });
-    this.router.navigate('home');
   }
 
   isAuthenticated(): boolean {

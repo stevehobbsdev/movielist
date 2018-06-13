@@ -13,6 +13,11 @@
     </ul>
 
     <search-box></search-box>
+
+    <ul class="navbar-nav">
+      <li class="nav-item" if.bind="isAuthenticated"><a href="#" click.trigger="auth.logout()" class="nav-link">Log out</a></li>
+    </ul>
+    
   </nav>
 
 </template>
