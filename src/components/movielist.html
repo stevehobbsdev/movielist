@@ -1,10 +1,11 @@
 <template>
   <require from="./movie"></require>
+  <require from="./movielist.css"></require>
 
   <h2>${title}</h2>
 
   <div class="movie-list row">
-    <div class="col-sm-4 movie" repeat.for="movie of movies">
+    <div class="col-md-4 movie" repeat.for="movie of movies">
         <movie model.bind="movie"></movie>
     </div>
   </div>

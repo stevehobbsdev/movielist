@@ -13,9 +13,7 @@ export class Movie {
   constructor(private watchlist: WatchlistManager, private auth: AuthService) {
     this.isAuthenticated = auth.isAuthenticated();
 
-    auth.authNotifier.addListener('authChange', state => {
-      this.isAuthenticated = state.authenticated;
-    });
+    auth.authNotifier.addListener('authChange', this.authChangeHandler)
   }
 
   mouseOver() {
@@ -30,6 +28,10 @@ export class Movie {
     this.isInWatchlist = this.watchlist.isAdded(this.model);    
   }
 
+  detached() {
+    this.auth.authNotifier.removeListener('authChange', this.authChangeHandler);
+  }
+
   addMovie(movie: MovieModel) {
     this.watchlist.add(movie);
     this.isInWatchlist = true;
@@ -38,5 +40,9 @@ export class Movie {
   removeMovie(movie: MovieModel) {
     this.watchlist.remove(movie);
     this.isInWatchlist = false;
+  }
+
+  private authChangeHandler(state) {
+    this.isAuthenticated = state.authenticated;    
   }
 }

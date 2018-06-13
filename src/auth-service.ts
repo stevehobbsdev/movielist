@@ -21,7 +21,9 @@ export class AuthService {
     scope: "openid"
   });
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) {
+    this.authNotifier.setMaxListeners(21);
+  }
 
   handleAuthentication(): void {
     this.auth0.parseHash((err, authResult) => {

@@ -1,7 +1,7 @@
 <template>
   <require from="./movie.css"></require>
 
-  <div class="card" style="min-width: 20rem">
+  <div class="card">
 
     <div class="movie-card ${isHovering ? 'active' : ''}" mouseover.delegate="mouseOver()" mouseout.delegate="mouseOut()">
       <img src="${model.poster_path}" alt="" class="card-img-top">
