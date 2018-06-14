@@ -18,6 +18,6 @@ The application will then be available (by default) at [localhost:8080](http://l
 
 ## Screenshots
 
-![Screenshot of the watch list page](https://res.cloudinary.com/dbec78owc/image/upload/v1528669670/watchlist-1.png)
+![Screenshot of the watch list page](https://res.cloudinary.com/dbec78owc/image/upload/c_scale,w_1280/v1528669670/watchlist-1.png)
 
-![Screenshot of the popular movies page](https://res.cloudinary.com/dbec78owc/image/upload/v1528665819/movies-3.png)
+![Screenshot of the popular movies page](https://res.cloudinary.com/dbec78owc/image/upload/c_scale,w_1280/v1528665819/movies-3.png)
