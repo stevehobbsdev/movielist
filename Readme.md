@@ -1,6 +1,6 @@
 # Movielist
 
-A movie watchlist application built using [AureliaJS](aurelia.io).
+A movie watchlist application built using [AureliaJS](aurelia.io). Feel free to [check out the demo](https://movies.elkdanger.co.uk)!
 
 ## Building the application
 
