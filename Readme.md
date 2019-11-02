@@ -2,8 +2,6 @@
 
 A movie watchlist application built using [AureliaJS](https://aurelia.io/). This is accompanying source code for the Auth0 tutorial: [Building a Movie Listing Application with Aurelia and TypeScript](https://auth0.com/blog/building-a-movie-listing-application-with-aurelia-and-typescript).
 
-Feel free to [check out the demo](https://movies.elkdanger.co.uk)!
-
 ## Building the application
 
 To compile assets and build the application, run the following from a terminal window inside the project directory:
