@@ -27,7 +27,7 @@
     "aurelia-testing": "^1.0.0-beta.4.0.0",
     "aurelia-tools": "^2.0.0",
     "aurelia-webpack-plugin": "^3.0.0-rc.1",
-    "auth0-js": "^9.6.1",
+    "auth0-js": "^9.13.2",
     "copy-webpack-plugin": "^4.5.1",
     "css-loader": "^0.28.11",
     "del": "^3.0.0",
