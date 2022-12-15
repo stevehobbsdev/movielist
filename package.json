@@ -21,7 +21,7 @@
     "@types/lodash": "^4.14.105",
     "@types/node": "^9.4.7",
     "@types/webpack": "^4.1.1",
-    "aurelia-cli": "^0.33.0",
+    "aurelia-cli": "^3.0.1",
     "aurelia-loader-nodejs": "^1.0.1",
     "aurelia-pal-nodejs": "^1.0.0-beta.3.2.0",
     "aurelia-testing": "^1.0.0-beta.4.0.0",
